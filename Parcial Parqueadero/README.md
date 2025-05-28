@@ -1,84 +1,87 @@
 # Descripción del Proyecto
 Este sistema de gestión de parqueaderos es una aplicación desarrollada en Python que simula las operaciones fundamentales de un estacionamiento vehicular, incluyendo el registro de entradas y salidas, cálculo de tarifas y visualización del estado actual del parqueadero.
 
-# Características Principales
-1. Navegación Visual Interactiva
-- Propósito
+# Características innovadoras
+# 1. Navegación Visual Interactiva
 
-Implementar una interfaz que permita al usuario seleccionar interactivamente el espacio de estacionamiento para cada vehículo.
-
-- Justificación
-
-Simula el proceso real de estacionamiento mejorando la experiencia del usuario
-
-Facilita la comprensión espacial del diseño del parqueadero
-
-Garantiza que los vehículos solo ocupen espacios designados como válidos
-
-- Implementación
-
-Matriz bidimensional que representa el plano del parqueadero
-
-Sistema de coordenadas con controles direccionales (WASD)
-
-Validación en tiempo real de las posiciones permitidas
-
-2. Sistema de Zonificación Diferenciada
 Propósito
-Gestionar de manera separada los espacios para automóviles y motocicletas.
+- Implementar una interfaz que permita al usuario seleccionar interactivamente el espacio de estacionamiento para cada vehículo.
 
 Justificación
 
-Optimización del espacio disponible
+- Simula el proceso real de estacionamiento mejorando la experiencia del usuario
 
-Prevención de conflictos entre diferentes tipos de vehículos
+- Facilita la comprensión espacial del diseño del parqueadero
 
-Organización lógica del área de estacionamiento
+- Garantiza que los vehículos solo ocupen espacios designados como válidos
 
 Implementación
 
-Identificación del tipo de vehículo mediante patrones de matrícula
+- Matriz bidimensional que representa el plano del parqueadero
 
-Designación de áreas específicas para cada tipo de vehículo
+- Sistema de coordenadas con controles direccionales (WASD)
 
-Validación de ubicaciones permitidas durante el proceso de estacionamiento
+- Validación en tiempo real de las posiciones permitidas
 
-3. Módulo de Facturación Automatizado
+# 2. Sistema de Zonificación Diferenciada
+
 Propósito
-Calcular automáticamente los cargos por tiempo de estacionamiento.
+- Gestionar de manera separada los espacios para automóviles y motocicletas.
 
 Justificación
 
-Eliminación de errores en cálculos manuales
+- Optimización del espacio disponible
 
-Transparencia en el proceso de cobro
+- Prevención de conflictos entre diferentes tipos de vehículos
 
-Mantenimiento de registros históricos completos
+- Organización lógica del área de estacionamiento
 
 Implementación
 
-Registro preciso de marcas temporales (entrada/salida)
+- Identificación del tipo de vehículo mediante patrones de matrícula
 
-Cálculo de duración de estancia en segundos
+- Designación de áreas específicas para cada tipo de vehículo
 
-Aplicación de tarifas diferenciadas por tipo de vehículo
+- Validación de ubicaciones permitidas durante el proceso de estacionamiento
 
-4. Visualización en Tiempo Real
+# 3. Módulo de Facturación Automatizado
+
 Propósito
-Mostrar el estado actual de ocupación del parqueadero.
+- Calcular automáticamente los cargos por tiempo de estacionamiento.
 
 Justificación
 
-Información inmediata sobre disponibilidad de espacios
+- Eliminación de errores en cálculos manuales
 
-Soporte para la toma de decisiones operativas
+- Transparencia en el proceso de cobro
 
-Retroalimentación visual de las acciones realizadas
+- Mantenimiento de registros históricos completos
 
 Implementación
 
-Representación matricial del plano del parqueadero
+- Registro preciso de marcas temporales (entrada/salida)
 
-Actualización dinámica del estado de ocupación
+- Cálculo de duración de estancia en segundos
 
-Distinción clara entre espacios disponibles y ocupados
+- Aplicación de tarifas diferenciadas por tipo de vehículo
+
+# 4. Visualización en Tiempo Real
+
+Propósito
+- Mostrar el estado actual de ocupación del parqueadero.
+
+Justificación
+
+- Información inmediata sobre disponibilidad de espacios
+
+- Soporte para la toma de decisiones operativas
+
+- Retroalimentación visual de las acciones realizadas
+
+Implementación
+
+- Representación matricial del plano del parqueadero
+
+- Actualización dinámica del estado de ocupación
+
+- Distinción clara entre espacios disponibles y ocupados
