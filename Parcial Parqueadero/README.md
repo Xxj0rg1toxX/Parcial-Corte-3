@@ -1,12 +1,13 @@
-Descripción del Proyecto
+# Descripción del Proyecto
 Este sistema de gestión de parqueaderos es una aplicación desarrollada en Python que simula las operaciones fundamentales de un estacionamiento vehicular, incluyendo el registro de entradas y salidas, cálculo de tarifas y visualización del estado actual del parqueadero.
 
-Características Principales
+# Características Principales
 1. Navegación Visual Interactiva
-Propósito
+- Propósito
+
 Implementar una interfaz que permita al usuario seleccionar interactivamente el espacio de estacionamiento para cada vehículo.
 
-Justificación
+- Justificación
 
 Simula el proceso real de estacionamiento mejorando la experiencia del usuario
 
@@ -14,7 +15,7 @@ Facilita la comprensión espacial del diseño del parqueadero
 
 Garantiza que los vehículos solo ocupen espacios designados como válidos
 
-Implementación
+- Implementación
 
 Matriz bidimensional que representa el plano del parqueadero
 
