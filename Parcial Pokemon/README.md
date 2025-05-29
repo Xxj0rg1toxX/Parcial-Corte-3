@@ -1,7 +1,7 @@
 # Aclaracion
 Hay 2 archivos de pokemon, v1 y v2, la v1 es la version inicial y completamente funcional, con 2 pokemon, 3 ataques, efectos de estado y combate por turnos mientras que la v2 es la version mas compleja y mas grande pero con algunos problemas en la implementacion de los efectos de estado y la separacion por headers, queda a su criterio la calificacion de esta parte del proyecto ya que en la v2 quisimos ir mas alla de lo solicitado pero por falta de conocimiento se nos hizo complicado implementar estas funcionalidades.
 
-# Cambios implementados archivo pokemonv1
+# Cambios implementados pokemonv1
 
 # Descripción General
 
@@ -99,3 +99,86 @@ Implementación
 - Los golpes críticos hacen el doble de daño
 
 - Se muestra un mensaje especial cuando ocurre
+
+---
+
+
+# Cambios implementados pokemonv2-AVANZADO
+
+# Descripción General
+
+Este proyecto implementa un sistema de combate Pokémon completo con todas las mecánicas principales de los juegos originales simulando la mitica batalla de los personajes principales "Red y Blue" usando sus pokemon caracterizticos. Incluye equipos de 6 Pokémon, sistema de tipos, estadísticas y un sistema de combate por turnos completo, con cambios de pokemon en combate y al momento de que son debilitados.
+
+# 1. Sistema de Tipos Completo
+
+Propósito
+
+- Para recrear fielmente las relaciones de efectividad entre los 18 tipos Pokémon, añadiendo profundidad estratégica al combate.
+
+Justificación
+
+- El sistema de tipos es fundamental en Pokémon, donde las ventajas/desventajas pueden cambiar completamente el curso de una batalla.
+
+Implementación
+
+- Tabla de efectividad con mapas anidados (map<string, map<string, float>>)
+
+- Función obtenerEfectividad() que calcula multiplicadores combinados
+
+- Mensajes de "super efectivo" o "no muy efectivo" basados en el resultado
+
+# 2. Sistema de Estadísticas Completo
+
+Propósito
+
+- Para simular con precisión cómo funcionan las estadísticas (Ataque, Defensa, etc.) en los juegos originales, incluyendo modificadores de etapa.
+
+Justificación
+
+- Las estadísticas y sus modificadores son cruciales para el balance del juego y las estrategias competitivas.
+
+Implementación
+
+- Sistema de etapas (-6 a +6) que modifican stats
+
+- Tabla de multiplicadores para cada nivel de etapa
+
+- Método getStat() que calcula el valor final considerando etapas
+
+# 3. Equipos de 6 Pokémon
+
+Propósito
+
+- Para permitir combates más largos y estratégicos, similares a los juegos principales.
+
+Justificación
+
+- Los equipos completos son esenciales para la experiencia Pokémon auténtica.
+
+Implementación
+
+- Clase Jugador gestiona un equipo de 6 Pokémon
+
+- Sistema de cambio de Pokémon durante el combate
+
+- Forzar cambio cuando un Pokémon es debilitado
+
+# 4. Sistema de Combate por Velocidad
+
+Propósito
+
+- Para determinar el orden de turnos basado en la velocidad de los Pokémon.
+
+Justificación
+
+- La velocidad es una mecánica clave que añade capas estratégicas al combate.
+
+Implementación
+
+- Comparación de stats de velocidad al inicio de cada ronda
+
+- Movimientos con prioridad que ignoran la velocidad
+
+- Turnos alternados basados en esta comparación
+
+
