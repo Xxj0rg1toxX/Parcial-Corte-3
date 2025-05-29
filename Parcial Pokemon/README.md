@@ -107,7 +107,7 @@ Implementación
 
 # Descripción General
 
-Este proyecto implementa un sistema de combate Pokémon completo con todas las mecánicas principales de los juegos originales simulando la mitica batalla de los personajes principales "Red y Blue" usando sus pokemon caracterizticos. Incluye equipos de 6 Pokémon, sistema de tipos, estadísticas y un sistema de combate por turnos completo, con cambios de pokemon en combate y al momento de que son debilitados.
+Este proyecto implementa un sistema de combate Pokémon completo con todas las mecánicas principales de los juegos originales simulando la mitica batalla de los personajes principales "Red y Blue" usando sus pokemon caracteristicos. Incluye equipos de 6 Pokémon, sistema de tipos, estadísticas y un sistema de combate por turnos completo, con cambios de pokemon en combate y al momento de que son debilitados.
 
 # 1. Sistema de Tipos Completo
 
