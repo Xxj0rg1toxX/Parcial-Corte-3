@@ -3,89 +3,99 @@ Hay 2 archivos de pokemon, v1 y v2, la v1 es la version inicial y completamente 
 
 # Cambios implementados archivo pokemonv1
 
-Descripción General
+# Descripción General
+
 Este proyecto implementa un sistema de combate Pokémon por turnos en C++, inspirado en los juegos originales de Game Freak. El programa simula una batalla entre dos Pokémon con diferentes ataques, efectos de estado y mecánicas de combate.
 
-- Innovaciones Implementadas
+# 1. Sistema de Efectos de Estado
 
-1. Sistema de Efectos de Estado
+Propósito
 
-¿Para qué se implementó?
-Para añadir profundidad estratégica al combate, permitiendo que ciertos ataques tengan efectos persistentes más allá del daño inmediato.
+- Para añadir profundidad estratégica al combate, permitiendo que ciertos ataques tengan efectos persistentes más allá del daño inmediato.
 
-¿Por qué se consideró necesario?
-Los efectos de estado son una parte fundamental de los combates Pokémon reales, añadiendo capas de estrategia y variabilidad a las batallas.
+Propósito
 
-¿Cómo se implementó?
+- Los efectos de estado son una parte fundamental de los combates Pokémon reales, añadiendo capas de estrategia y variabilidad a las batallas.
 
-Se creó un enum Estado con posibles condiciones (actualmente solo quemado)
+Propósito
 
-Se añadió el método aplicarEfectoEstado() que se ejecuta cada turno
+- Se creó un enum Estado con posibles condiciones (actualmente solo quemado)
 
-Los ataques pueden infligir estados con cierta probabilidad (ej: Ascuas tiene 15% de quemar)
+- Se añadió el método aplicarEfectoEstado() que se ejecuta cada turno
 
-2. Ataques con Efectos Secundarios
+- Los ataques pueden infligir estados con cierta probabilidad (ej: Ascuas tiene 15% de quemar)
 
-¿Para qué se implementó?
-Para diversificar las opciones tácticas disponibles para cada Pokémon.
+# 2. Ataques con Efectos Secundarios
 
-¿Por qué se consideró necesario?
-En los juegos originales, muchos ataques tienen efectos adicionales que los hacen únicos, no solo varían en daño.
+Propósito
 
-¿Cómo se implementó?
+- Para diversificar las opciones tácticas disponibles para cada Pokémon.
 
-Se extendió la clase Ataque con propiedades para efectos especiales:
+Justificación
 
-drenado: recupera vida igual al 50% del daño
+- En los juegos originales, muchos ataques tienen efectos adicionales que los hacen únicos, no solo varían en daño.
 
-quemar: probabilidad de infligir quemadura
+Implementación
 
-retroceder: hace perder un turno al oponente
+- Se extendió la clase Ataque con propiedades para efectos especiales:
 
-bprecision: reduce la precisión del rival
+- drenado: recupera vida igual al 50% del daño
 
-3. Modificadores de Precisión
+- quemar: probabilidad de infligir quemadura
 
-¿Para qué se implementó?
-Para simular cómo ciertos ataques pueden afectar estadísticas de combate durante la batalla.
+- retroceder: hace perder un turno al oponente
 
-¿Por qué se consideró necesario?
-Esto añade otra capa estratégica donde los jugadores pueden priorizar debilitar al oponente en lugar de solo hacer daño directo.
+- bprecision: reduce la precisión del rival
 
-¿Cómo se implementó?
+# 3. Modificadores de Precisión
 
-Cada Pokémon tiene un modPrecision que afecta sus ataques
+Propósito
 
-Ataques como "Bofetón Lodo" reducen este modificador
+- Para simular cómo ciertos ataques pueden afectar estadísticas de combate durante la batalla.
 
-La precisión se verifica contra este modificador al atacar
+Justificación
 
-4. Mecánica de Retroceso
+- Esto añade otra capa estratégica donde los jugadores pueden priorizar debilitar al oponente en lugar de solo hacer daño directo.
 
-¿Para qué se implementó?
-Para añadir un efecto de control que puede hacer perder turnos al oponente.
+Implementación
 
-¿Por qué se consideró necesario?
-Proporciona una alternativa estratégica a los ataques puramente ofensivos o curativos.
+- Cada Pokémon tiene un modPrecision que afecta sus ataques
 
-¿Cómo se implementó?
+- Ataques como "Bofetón Lodo" reducen este modificador
 
-Ataques como Mordisco tienen probabilidad de hacer retroceder
+- La precisión se verifica contra este modificador al atacar
 
-El flag retrocedido hace que el Pokémon afectado pierda su siguiente turno
+# 4. Mecánica de Retroceso
 
-5. Sistema de Críticos
+Propósito
 
-¿Para qué se implementó?
-Para añadir un elemento de aleatoriedad controlada que puede cambiar el curso de la batalla.
+- Para añadir un efecto de control que puede hacer perder turnos al oponente.
 
-¿Por qué se consideró necesario?
-Los golpes críticos son un elemento clásico de los juegos Pokémon que añaden emoción al combate.
+Justificación
 
-¿Cómo se implementó?
+- Proporciona una alternativa estratégica a los ataques puramente ofensivos o curativos.
 
-Cada ataque tiene una probabilidad de crítico (critico)
+Implementación
 
-Los golpes críticos hacen el doble de daño
+- Ataques como Mordisco tienen probabilidad de hacer retroceder
 
-Se muestra un mensaje especial cuando ocurre
+- El flag retrocedido hace que el Pokémon afectado pierda su siguiente turno
+
+# 5. Sistema de Críticos
+
+Propósito
+
+- Para añadir un elemento de aleatoriedad controlada que puede cambiar el curso de la batalla.
+
+Justificación
+
+- Los golpes críticos son un elemento clásico de los juegos Pokémon que añaden emoción al combate.
+
+
+Implementación
+
+- Cada ataque tiene una probabilidad de crítico (critico)
+
+- Los golpes críticos hacen el doble de daño
+
+- Se muestra un mensaje especial cuando ocurre
