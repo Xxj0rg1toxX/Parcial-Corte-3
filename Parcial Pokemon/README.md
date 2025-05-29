@@ -1,5 +1,5 @@
 # Aclaracion
-Hay 2 archivos de pokemon, v1 y v2, la v1 es la version inicial y completamente funcional, con 2 pokemon, 3 ataques, efectos de estado y combate por turnos mientras que la v2 es la version mas compleja y mas grande pero con algunos problemas en la implementacion del cambio de los pokemon cuando son debilitados y faltando los efectos de estado, queda a su criterio la calificacion de esta parte del proyecto ya que en la v2 quisimos ir mas alla de lo solicitado pero por falta de conocimiento se nos hizo complicado implementar estas funcionalidades.
+Hay 2 archivos de pokemon, v1 y v2, la v1 es la version inicial y completamente funcional, con 2 pokemon, 3 ataques, efectos de estado y combate por turnos mientras que la v2 es la version mas compleja y mas grande pero con algunos problemas en la implementacion de los efectos de estado y la separacion por headers, queda a su criterio la calificacion de esta parte del proyecto ya que en la v2 quisimos ir mas alla de lo solicitado pero por falta de conocimiento se nos hizo complicado implementar estas funcionalidades.
 
 # Cambios implementados archivo pokemonv1
 
